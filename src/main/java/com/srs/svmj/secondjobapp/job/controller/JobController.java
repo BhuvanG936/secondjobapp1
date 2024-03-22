@@ -1,10 +1,10 @@
 
 //Implementation without using the database
 
-package com.srs.svmj.firstjobapp.controller;
+package com.srs.svmj.secondjobapp.job.controller;
 
-import com.srs.svmj.firstjobapp.entity.Job;
-import com.srs.svmj.firstjobapp.service.JobService;
+import com.srs.svmj.secondjobapp.job.entity.Job;
+import com.srs.svmj.secondjobapp.job.service.JobService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +15,7 @@ import java.util.List;
 @RestController
 public class JobController {
 
+    private List<Job> jobs = new ArrayList<>();
     private JobService jobService;
 
     public JobController(JobService jobService) {

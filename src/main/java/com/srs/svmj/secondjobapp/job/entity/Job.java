@@ -1,14 +1,24 @@
-package com.srs.svmj.firstjobapp.entity;
+package com.srs.svmj.secondjobapp.job.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
+@Entity
 public class Job {
 
+    @Id
     private Long id;
     private String title;
     private String description;
     private String minSalary;
     private String maxSalary;
     private String location;
+
+    public Job(){
+
+    }
 
     public Job(long id, String title, String description, String minSalary, String maxSalary, String location) {
         this.id = id;

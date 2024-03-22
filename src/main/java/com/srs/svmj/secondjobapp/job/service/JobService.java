@@ -1,6 +1,6 @@
-package com.srs.svmj.firstjobapp.service;
+package com.srs.svmj.secondjobapp.job.service;
 
-import com.srs.svmj.firstjobapp.entity.Job;
+import com.srs.svmj.secondjobapp.job.entity.Job;
 
 import java.util.List;
 
